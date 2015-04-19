@@ -10,8 +10,11 @@
 
 @interface ViewController : UIViewController{
     
+    //４枚の画像の名前を入れる配列
     NSString *ImageNamed[4];
+    //選択している画像の番号
     int imageNumber;
+    //背景画像のインスタンス
     UIImage *Image;
 }
 
