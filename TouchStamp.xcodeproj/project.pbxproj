@@ -14,6 +14,11 @@
 		3E067E211AE0D56D008242AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E067E201AE0D56D008242AB /* Images.xcassets */; };
 		3E067E241AE0D56D008242AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E067E221AE0D56D008242AB /* LaunchScreen.xib */; };
 		3E067E301AE0D56D008242AB /* TouchStampTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E067E2F1AE0D56D008242AB /* TouchStampTests.m */; };
+		3E067E471AE0DD78008242AB /* hana.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E067E431AE0DD78008242AB /* hana.png */; };
+		3E067E491AE0DD78008242AB /* ハート.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E067E451AE0DD78008242AB /* ハート.png */; };
+		3E067E4D1AE38A00008242AB /* usagi.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E067E4B1AE38A00008242AB /* usagi.png */; };
+		3E067E4E1AE38A00008242AB /* 犬.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E067E4C1AE38A00008242AB /* 犬.png */; };
+		3E067E501AE3AAE5008242AB /* 幾何学.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E067E4F1AE3AAE5008242AB /* 幾何学.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,11 @@
 		3E067E291AE0D56D008242AB /* TouchStampTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchStampTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E067E2E1AE0D56D008242AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E067E2F1AE0D56D008242AB /* TouchStampTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchStampTests.m; sourceTree = "<group>"; };
+		3E067E431AE0DD78008242AB /* hana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hana.png; sourceTree = "<group>"; };
+		3E067E451AE0DD78008242AB /* ハート.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ハート.png"; sourceTree = "<group>"; };
+		3E067E4B1AE38A00008242AB /* usagi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usagi.png; sourceTree = "<group>"; };
+		3E067E4C1AE38A00008242AB /* 犬.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "犬.png"; sourceTree = "<group>"; };
+		3E067E4F1AE3AAE5008242AB /* 幾何学.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "幾何学.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,7 @@
 		3E067E121AE0D56D008242AB /* TouchStamp */ = {
 			isa = PBXGroup;
 			children = (
+				3E067E421AE0DD78008242AB /* 素材 */,
 				3E067E171AE0D56D008242AB /* AppDelegate.h */,
 				3E067E181AE0D56D008242AB /* AppDelegate.m */,
 				3E067E1A1AE0D56D008242AB /* ViewController.h */,
@@ -117,6 +128,18 @@
 				3E067E2E1AE0D56D008242AB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E067E421AE0DD78008242AB /* 素材 */ = {
+			isa = PBXGroup;
+			children = (
+				3E067E4F1AE3AAE5008242AB /* 幾何学.png */,
+				3E067E4B1AE38A00008242AB /* usagi.png */,
+				3E067E4C1AE38A00008242AB /* 犬.png */,
+				3E067E431AE0DD78008242AB /* hana.png */,
+				3E067E451AE0DD78008242AB /* ハート.png */,
+			);
+			path = "素材";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +224,12 @@
 			files = (
 				3E067E1F1AE0D56D008242AB /* Main.storyboard in Resources */,
 				3E067E241AE0D56D008242AB /* LaunchScreen.xib in Resources */,
+				3E067E491AE0DD78008242AB /* ハート.png in Resources */,
+				3E067E501AE3AAE5008242AB /* 幾何学.png in Resources */,
+				3E067E4D1AE38A00008242AB /* usagi.png in Resources */,
 				3E067E211AE0D56D008242AB /* Images.xcassets in Resources */,
+				3E067E471AE0DD78008242AB /* hana.png in Resources */,
+				3E067E4E1AE38A00008242AB /* 犬.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +440,7 @@
 				3E067E351AE0D56D008242AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E067E361AE0D56D008242AB /* Build configuration list for PBXNativeTarget "TouchStampTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +449,7 @@
 				3E067E381AE0D56D008242AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
