@@ -15,8 +15,14 @@
     //選択している画像の番号
     int imageNumber;
     //背景画像のインスタンス
-    UIImage *Image;
-}
+    __weak IBOutlet UIImageView *haikei;
+    
+    }
+
+- (IBAction)hanaBt;
+- (IBAction)heartBt;
+- (IBAction)dogBt;
+- (IBAction)rabbitBt;
 
 
 

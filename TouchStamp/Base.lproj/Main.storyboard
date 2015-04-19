@@ -25,6 +25,9 @@
                                 <state key="normal" title="Button" image="hana.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="hanaBt" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hoH-Ts-tKW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lM-fl-lqA">
                                 <rect key="frame" x="120" y="516" width="55" height="54"/>
@@ -32,6 +35,9 @@
                                 <state key="normal" title="Button" image="ハート.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="heartBt" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZyS-ON-tV8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqC-Fw-m5o">
                                 <rect key="frame" x="196" y="517" width="60" height="53"/>
@@ -39,6 +45,9 @@
                                 <state key="normal" title="Button" image="犬.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="dogBt" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bqA-N6-HIV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nN-0N-PD4">
                                 <rect key="frame" x="271" y="517" width="63" height="53"/>
@@ -47,6 +56,9 @@
                                 <state key="normal" title="Button" image="usagi.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="rabbitBt" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Wmb-zL-idX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZy-WV-cv0">
                                 <rect key="frame" x="123" y="581" width="52" height="52"/>
@@ -76,6 +88,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="haikei" destination="RLB-Z0-rvU" id="5f7-og-2hw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

@@ -14,6 +14,22 @@
 
 @implementation ViewController
 
+//スタンプが選択された時
+- (IBAction)hanaBt{
+    imageNumber = 1;
+}
+
+- (IBAction)heartBt{
+    imageNumber = 2;
+}
+
+- (IBAction)dogBt{
+    imageNumber = 3;
+}
+- (IBAction)rabbitBt{
+    imageNumber = 4;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -27,7 +43,49 @@
     ImageNamed[3]=@"犬.png";
     
     //背景画像を設定する
-    Image = [UIImage imageNamed:@"幾何学.png"];    
+    UIImage *Image = [UIImage imageNamed:@"幾何学.png"];
+    [haikei setImage:Image];
+    
+    
+}
+//タッチされた時の処理
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    
+    //タッチされた時の場所を取得
+    UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInView:self.view];
+    
+    if (imageNumber == 1) {
+        UIImage *image = [UIImage imageNamed:@"hana.png"];
+        UIImageView *imgView = [[UIImageView alloc] initWithImage:image];
+        imgView.center = CGPointMake(location.x, location.y);
+        [self.view addSubview:imgView];
+        
+    }
+    
+    if (imageNumber == 2) {
+        UIImage *image = [UIImage imageNamed:@"ハート.png"];
+        UIImageView *imgView = [[UIImageView alloc] initWithImage:image];
+        imgView.center = CGPointMake(location.x, location.y);
+        [self.view addSubview:imgView];
+    }
+
+    if (imageNumber == 3) {
+        UIImage *image = [UIImage imageNamed:@"犬.png"];
+        UIImageView *imgView = [[UIImageView alloc] initWithImage:image];
+        imgView.center = CGPointMake(location.x, location.y);
+        [self.view addSubview:imgView];
+        
+    }
+
+    if (imageNumber == 4) {
+        UIImage *image = [UIImage imageNamed:@"usagi.png"];
+        UIImageView *imgView = [[UIImageView alloc] initWithImage:image];
+        imgView.center = CGPointMake(location.x, location.y);
+        [self.view addSubview:imgView]; 
+        
+    }
+
     
 }
 
@@ -35,5 +93,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end
