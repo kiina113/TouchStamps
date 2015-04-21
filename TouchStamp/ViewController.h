@@ -25,7 +25,7 @@
 - (IBAction)rabbitBt;
 - (IBAction)back;
 - (IBAction)gazou;
-
+- (IBAction)hozon;
 
 
 

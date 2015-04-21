@@ -33,6 +33,7 @@
 - (IBAction)gazou{
     UIImagePickerController *ipc = [[UIImagePickerController alloc] init];
     [ipc setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+    [ipc setDelegate:self];
     [ipc setAllowsEditing:YES];
     [self presentViewController:ipc animated:YES completion:nil];
 }
@@ -43,6 +44,21 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
     [haikei setImage:image];
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)hozon{
+    CGRect rect = CGRectMake(0, 30, 320, 462);
+    UIGraphicsBeginImageContext(rect.size);
+    
+    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *capture = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    UIImageWriteToSavedPhotosAlbum(capture, nil, nil, nil);
+    UIGraphicsEndImageContext();
+    
+
 }
 
 - (void)viewDidLoad {
