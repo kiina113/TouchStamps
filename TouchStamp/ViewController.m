@@ -30,6 +30,21 @@
     imageNumber = 4;
 }
 
+- (IBAction)gazou{
+    UIImagePickerController *ipc = [[UIImagePickerController alloc] init];
+    [ipc setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+    [ipc setAllowsEditing:YES];
+    [self presentViewController:ipc animated:YES completion:nil];
+}
+
+-(void)imagePickerController:(UIImagePickerController *)picker
+didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
+    [haikei setImage:image];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -55,18 +70,23 @@
     UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView:self.view];
     
+    //どの画像が選択されたのか
     if (imageNumber == 1) {
         UIImage *image = [UIImage imageNamed:@"hana.png"];
         UIImageView *imgView = [[UIImageView alloc] initWithImage:image];
         imgView.center = CGPointMake(location.x, location.y);
+        CGRect rect = CGRectMake(location.x,location.y , 54, 63);
+        imgView.frame = rect;
         [self.view addSubview:imgView];
         
-    }
+                }
     
     if (imageNumber == 2) {
         UIImage *image = [UIImage imageNamed:@"ハート.png"];
         UIImageView *imgView = [[UIImageView alloc] initWithImage:image];
         imgView.center = CGPointMake(location.x, location.y);
+        CGRect rect = CGRectMake(location.x,location.y , 54, 63);
+        imgView.frame = rect;
         [self.view addSubview:imgView];
     }
 
@@ -74,6 +94,8 @@
         UIImage *image = [UIImage imageNamed:@"犬.png"];
         UIImageView *imgView = [[UIImageView alloc] initWithImage:image];
         imgView.center = CGPointMake(location.x, location.y);
+        CGRect rect = CGRectMake(location.x,location.y , 54, 63);
+        imgView.frame = rect;
         [self.view addSubview:imgView];
         
     }
@@ -82,7 +104,9 @@
         UIImage *image = [UIImage imageNamed:@"usagi.png"];
         UIImageView *imgView = [[UIImageView alloc] initWithImage:image];
         imgView.center = CGPointMake(location.x, location.y);
-        [self.view addSubview:imgView]; 
+        CGRect rect = CGRectMake(location.x,location.y , 54, 63);
+        imgView.frame = rect;
+        [self.view addSubview:imgView];
         
     }
 

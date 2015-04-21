@@ -23,6 +23,9 @@
 - (IBAction)heartBt;
 - (IBAction)dogBt;
 - (IBAction)rabbitBt;
+- (IBAction)back;
+- (IBAction)gazou;
+
 
 
 
